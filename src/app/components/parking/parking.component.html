@@ -1,0 +1,11 @@
+<mat-card>
+    <mat-card-title>Parking</mat-card-title>
+    <div class="container">
+        <button mat-raised-button color="primary" (click)="parking.clean = true">Clean</button>
+        <button mat-raised-button color="accent" (click)="leaveProperty()">Exit to property @Host</button>
+    </div>
+    <mat-list>
+        <mat-list-item> Cars: {{parking.cars}} </mat-list-item>
+        <mat-list-item> Clean: {{parking.clean}} </mat-list-item>
+    </mat-list>
+</mat-card>

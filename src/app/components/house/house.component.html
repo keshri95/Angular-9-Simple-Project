@@ -1,0 +1,16 @@
+<mat-card>
+    <mat-card-title>House of {{data.family}}</mat-card-title>
+    <mat-card-content>
+        <ng-container>
+            <div class="container">
+                <button mat-raised-button color="primary" (click)="house.doorOpened = false">Close</button>
+                <button mat-raised-button color="accent" (click)="leaveProperty()">Exit to property @Output</button>
+            </div>
+            <mat-list>
+                <mat-list-item> Door opened: {{house.doorOpened}} </mat-list-item>
+                <mat-list-item> Color: {{house.color}} </mat-list-item>
+            </mat-list>
+        </ng-container>
+
+    </mat-card-content>
+</mat-card>

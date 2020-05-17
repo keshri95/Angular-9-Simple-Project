@@ -1,0 +1,16 @@
+<div class="container">
+    <mat-card class="property-card">
+        <mat-card-title>Property. There are {{propertyInfo.persons}} persons.</mat-card-title>
+        <hr>
+        <mat-card-content>
+            <div class="container">
+                <button mat-raised-button color="primary" (click)="uncleanParking()">Unclean parking</button>
+                <button mat-raised-button color="accent" (click)="openHouse()">Go open house door</button>
+            </div>
+            <div class="container">
+                <app-parking class="item"></app-parking>
+                <app-house (leaveOne)="deletePerson()" [data]="propertyInfo" class="item"></app-house>
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>
